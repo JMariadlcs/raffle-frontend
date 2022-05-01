@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { useWeb3Contract, useMoralis } from "react-moralis"
-import { abi } from "../constants/abi.json" // import Raffle.json ABI
+import { abi } from "../constants/abi" // import Raffle.json ABI
 
 const RAFFLE_CONTRACT_ADDRESS = "0x2b8E04D9118122381E34A6030D05F9e62a05ea3C";
 
@@ -14,7 +14,7 @@ export default function LotteryEntrance() {
     // Create Button to entry into the lottery
     const { runContractFunction: enterRaffle } = useWeb3Contract({
         abi: abi,
-        constractAddress: RAFFLE_CONTRACT_ADDRESS, // Raffle.sol Smart Contract deployed on rinkeby
+        contractAddress: RAFFLE_CONTRACT_ADDRESS, // Raffle.sol Smart Contract deployed on rinkeby
         functionName: "enterRaffle",
         msgValue: "100000000000000000",
         params: {},
@@ -23,7 +23,7 @@ export default function LotteryEntrance() {
     // GET RECENT WINNER FUNCTION
     const { runContractFunction: getRecentWinner } = useWeb3Contract({
         abi: abi,
-        constractAddress: RAFFLE_CONTRACT_ADDRESS, // Raffle.sol Smart Contract deployed on rinkeby
+        contractAddress: RAFFLE_CONTRACT_ADDRESS, // Raffle.sol Smart Contract deployed on rinkeby
         functionName: "s_recentWinner",
         params: {},
     })
@@ -47,8 +47,9 @@ export default function LotteryEntrance() {
                 onClick={async () => {
                     await enterRaffle()
                 }}
-                >Enter Lottery!</button>
+                >Enter Lottery!!!</button>
             <div>The Recent Winner was: {recentWinner} </div>
         </div>
     )
 }
+
