@@ -1,4 +1,8 @@
+This is a full stack decentralized Raffle App using Chainlink VRF and Chainlink Keepers, Solidity and Next.js from workshop from Chainlink Hackathon Spring 2022.
 
+This repo contains all the stuff for the front-end part, the front-end is hold on [raffle-frontend](https://github.com/JMariadlcs/raffle-full-stack).
+
+The workshop followed to complete this repo is [this one](https://www.youtube.com/watch?v=8bMrko6iD9Q&t=5445s).
 
 ## Dependencies and Set-Up
 - Create Next.js project:
@@ -29,8 +33,8 @@ or
 npx tailwindcss init -p
 ```
 
-- Override [tailwind.config.js]() with the code inside this file.
-- Override [global.css]()
+- Override [tailwind.config.js](https://github.com/JMariadlcs/raffle-frontend/blob/main/tailwind.config.js) with the code inside this file.
+- Override [global.css](https://github.com/JMariadlcs/raffle-frontend/blob/main/styles/globals.css)
 
 - Run local yarn server:
 ```bash
