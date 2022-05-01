@@ -40,7 +40,7 @@ You will have your local server running at: `http://localhost:3000`.
 
 - Open new bash terminal to use while yarn server is running
 
-## Export code
+
 
 Once our Front-End code is finished..
 1. Export our code to a Bundle.
