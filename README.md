@@ -53,7 +53,7 @@ yarn next export
 ```
 A file called `out` is going to be generated with our exported code.
 
-## Upload to IPFS
+
 1. Open IPFS.
 2. Go to Files.
 3. Import `out` directory.
