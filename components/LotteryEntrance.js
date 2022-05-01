@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 import { useWeb3Contract, useMoralis } from "react-moralis"
 import { abi } from "../constants/abi" // import Raffle.json ABI
 
-const RAFFLE_CONTRACT_ADDRESS = "0xEc0B17Da5805E22c14E1eC14B5444850f783BDb9";
+const RAFFLE_CONTRACT_ADDRESS = "0xeB57511B172f66880Ee7F17f6504A9Ba52039B4B";
 
 export default function LotteryEntrance() {
 
