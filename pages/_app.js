@@ -6,6 +6,6 @@ function MyApp({ Component, pageProps }) {
     <MoralisProvider initializeOnMount = {false}>
       <Component {...pageProps} />
     </MoralisProvider>
-  )}
+  )};
 
-export default MyApp
+export default MyApp;

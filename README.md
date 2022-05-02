@@ -7,6 +7,10 @@ To achieve fully descentralization the Front-End has been uploaded to IPFS: ipfs
 
 The workshop followed to complete this repo is [this one](https://www.youtube.com/watch?v=8bMrko6iD9Q&t=5445s).
 
+The used repos from Patricks are the followings:
+1. [Hardhat Smart Contract Lottery](https://github.com/PatrickAlphaC/hardhat-smartcontract-lottery-fcc): Patrick's repo that we are building.
+2. [Front-end Smart Contract Lottery](https://github.com/PatrickAlphaC/nextjs-smartcontract-lottery-fcc): Patrick's repo for the Front-end part.
+
 ## Dependencies and Set-Up
 - Create Next.js project:
 ```bash
