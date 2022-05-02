@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 import { useWeb3Contract, useMoralis } from "react-moralis"
 import { abi } from "../constants/abi" // import Raffle.json ABI
 
-const RAFFLE_CONTRACT_ADDRESS = "0xeB57511B172f66880Ee7F17f6504A9Ba52039B4B";
+const RAFFLE_CONTRACT_ADDRESS = "0x0eaA12fBa6c198BC9d5E81999D0214FFc37EA7B2";
 
 export default function LotteryEntrance() {
 
@@ -47,9 +47,9 @@ export default function LotteryEntrance() {
                 onClick={async () => {
                     await enterRaffle()
                 }}
-                >Enter Lottery!!!</button>
+                >Enter Lottery!</button>
             <div>The Recent Winner was: {recentWinner} </div>
         </div>
     )
-}
+} 
 
