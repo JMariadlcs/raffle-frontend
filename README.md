@@ -76,7 +76,7 @@ DONE! ✅
 5. Copy CID.
 6. Go to Browher and paste ipfs://CID.
 
-NOTICE: It is possible to use [fleekhq](https://fleekhq.eth.link) to host our ipfs in a normal domain in order to make it easier for people to reach our page.
+NOTICE: It is possible to use [fleekhq](https://fleekhq.eth.link) or [pinata](https://www.pinata.cloud) to host our ipfs in a normal domain in order to make it easier for people to reach our page.
 
 ## Resources
 - [Full-stack-web3-connectors](https://github.com/PatrickAlphaC/full-stack-web3-metamask-connectors): a repo that contains different ways of using web3 connectors.
