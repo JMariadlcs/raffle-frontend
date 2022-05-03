@@ -69,7 +69,7 @@ We want our Front-End to be fully decentralized. To achive this goal we are uplo
 1. Open IPFS.
 2. Go to Files.
 3. Import `out` directory.
-4. Click 'set pinning.
+4. Click 'set pinning'.
 
 DONE! ✅ 
 
