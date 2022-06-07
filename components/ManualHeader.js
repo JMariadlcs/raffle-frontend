@@ -1,4 +1,4 @@
-// This file is to show what making a connect button looks like behind the scenes! -> EASIER WAY: 'Header.jsx'
+// This file is to show what making a connect button looks like behind the scenes! -> EASIER WAY: 'Header.js'
 
 import { useEffect } from "react"
 import { useMoralis } from "react-moralis"

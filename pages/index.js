@@ -14,7 +14,7 @@ export default function Home() {
       {isWeb3Enabled ? (
       <>
        
-        <LotteryEntrance />
+      <LotteryEntrance />
       </>
        ) : (
              <div> No MetaMask detected...</div>

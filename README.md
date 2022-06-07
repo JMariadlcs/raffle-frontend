@@ -31,7 +31,7 @@ yarn add moralis react-moralis
 -   Add Moralis web3uikit to interact with front-end:
 
 ```bash
-yarn add moralis react-moralis web3uikit
+yarn add web3uikit
 
 ```
 
