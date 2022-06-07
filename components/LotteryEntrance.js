@@ -1,6 +1,5 @@
 // This file will contain all the code related to our Raffle (ON RINKEBY)
 
-
 import { useWeb3Contract } from "react-moralis"
 import { contractAddresses, abi } from "../constants"
 // dont export from moralis when using react
