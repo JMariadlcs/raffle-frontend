@@ -101,12 +101,19 @@ export default function LotteryEntrance() {
             Hi from lottery entrance!
             {raffleAddress ? (
                 <div>
-                    <button className = "rounded ml-auto font-bold bg-blue-500" onClick = {async function (){await enterRaffle({
-                        onSucess: handleSuccess,
-                        onError: (error) => console.log(error),
-                    })}
+                    <button
+                        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ml-auto"
+                        onClick={async () =>
+                            await enterRaffle({
+                                // onComplete:
+                                // onError:
+                                onSuccess: handleSuccess,
+                                onError: (error) => console.log(error),
+                            })
                     }>Enter raffle</button>
                         Entrance Fee: {ethers.utils.formatUnits(entranceFee, "ether")} ETH
+                        Number of players: { numberOfPlayers}
+                        Recent winner: { recentWinner }
                 </div>
             ) : (
                 <div>No raffle address detected.</div>
