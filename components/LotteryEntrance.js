@@ -25,7 +25,7 @@ export default function LotteryEntrance() {
     const dispatch = useNotification()
     
     // Create Button to entry into the lottery
-    const { runContractFunction: enterRaffle } = useWeb3Contract({
+    const { runContractFunction: enterRaffle, isLoading, isFetching} = useWeb3Contract({
         abi: abi,
         contractAddress: raffleAddress, 
         functionName: "enterRaffle",
@@ -97,8 +97,7 @@ export default function LotteryEntrance() {
 
     // return a button with the function
     return(
-        <div>
-            Hi from lottery entrance!
+        <div className = "p-5">
             {raffleAddress ? (
                 <div>
                     <button
@@ -109,11 +108,18 @@ export default function LotteryEntrance() {
                                 // onError:
                                 onSuccess: handleSuccess,
                                 onError: (error) => console.log(error),
-                            })
-                    }>Enter raffle</button>
-                        Entrance Fee: {ethers.utils.formatUnits(entranceFee, "ether")} ETH
-                        Number of players: { numberOfPlayers}
-                        Recent winner: { recentWinner }
+                            })}
+                            disabled = {isLoading || isFetching}
+                            >
+                            {isLoading || isFetching ? (
+                                <div className="animate-spin spinner-border h-8 w-8 border-b-2 rounded-full"></div>
+                            ) : (
+                                "Enter Raffle"
+                            )}
+                        </button>
+                        <div>Entrance Fee: {ethers.utils.formatUnits(entranceFee, "ether")} ETH</div>
+                        <div>Number of players: { numberOfPlayers}</div>
+                        <div>Recent winner: { recentWinner }</div>
                 </div>
             ) : (
                 <div>No raffle address detected.</div>
