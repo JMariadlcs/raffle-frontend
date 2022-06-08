@@ -104,6 +104,8 @@ DONE! ✅
 
 NOTICE: It is possible to use [fleekhq](https://fleekhq.eth.link) or [pinata](https://www.pinata.cloud) to host our ipfs in a normal domain in order to make it easier for people to reach our page.
 
+**REMINDER**: if you use [fleekhq](https://fleekhq.eth.link) (recomended) -> add: buildcommand: 'yarn install && yarn run build && yarn run export'
+
 ## RESOURCES
 
 -   [Full-stack-web3-connectors](https://github.com/PatrickAlphaC/full-stack-web3-metamask-connectors): a repo that contains different ways of using web3 connectors.
